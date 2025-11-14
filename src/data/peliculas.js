@@ -39,13 +39,13 @@ const peliculas = [
         imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Diane_Keaton_by_Firooz_Zahedi_2.jpg/250px-Diane_Keaton_by_Firooz_Zahedi_2.jpg"
       }
     ],
-    resumen: "El Dr. Malcom Crowe es un conocido psicólogo infantil obsesionado con el doloroso recuerdo de un joven paciente desequilibrado al que fue incapaz de ayudar..."
+    resumen: "El Dr. Malcom Crowe es un conocido psicÃ³logo infantil obsesionado con el doloroso recuerdo de un joven paciente desequilibrado al que fue incapaz de ayudar..."
   },
   {
     id: 2,
     nombre: "Pulp Fiction",
     director: "Tarantino",
-    clasificacion: "Acción",
+    clasificacion: "AcciÃ³n",
     recaudacion: "$2.2 mil millones",
     cartelera: "https://www.ecartelera.com/carteles/200/286/001.jpg",
     nota: 9,
@@ -59,7 +59,7 @@ const peliculas = [
       {
         nombre: "Kate Winslet",
         fechaNacimiento: "05/10/1975",
-        biografia: "Kate Winslet es una actriz británica...",
+        biografia: "Kate Winslet es una actriz britÃ¡nica...",
         imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Kate_Winslet_at_the_2017_Toronto_International_Film_Festival_%28cropped%29.jpg/220px-Kate_Winslet_at_the_2017_Toronto_International_Film_Festival_%28cropped%29.jpg"
       },
       {
@@ -87,7 +87,7 @@ const peliculas = [
     id: 3,
     nombre: "300",
     director: "Zack Snyder",
-    clasificacion: "Acción",
+    clasificacion: "AcciÃ³n",
     recaudacion: "$213 millones",
     cartelera: "https://www.ecartelera.com/carteles/1300/1370/001.jpg",
     nota: 7,
@@ -95,7 +95,7 @@ const peliculas = [
       {
         nombre: "John Travolta",
         fechaNacimiento: "18/02/1954",
-        biografia: "John Travolta es un actor, bailarín y cantante estadounidense...",
+        biografia: "John Travolta es un actor, bailarÃ­n y cantante estadounidense...",
         imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/John_Travolta_cropped.jpg/220px-John_Travolta_cropped.jpg"
       },
       {
@@ -123,7 +123,7 @@ const peliculas = [
         imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Ving_Rhames_2019.jpg/220px-Ving_Rhames_2019.jpg"
       }
     ],
-    resumen: "Basada en la épica novela gráfica de Frank Miller, 300 narra la antigua Batalla de Termópilas..."
+    resumen: "Basada en la Ã©pica novela grÃ¡fica de Frank Miller, 300 narra la antigua Batalla de TermÃ³pilas..."
   },
   {
     id: 4,
@@ -149,7 +149,7 @@ const peliculas = [
       {
         nombre: "Gary Sinise",
         fechaNacimiento: "17/03/1955",
-        biografia: "Gary Sinise es un actor, director y músico estadounidense...",
+        biografia: "Gary Sinise es un actor, director y mÃºsico estadounidense...",
         imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Gary_Sinise_2012.jpg/220px-Gary_Sinise_2012.jpg"
       },
       {
@@ -194,7 +194,7 @@ const peliculas = [
   {
     id: 6,
     nombre: "Concursante",
-    director: "Rodrigo Cortés",
+    director: "Rodrigo CortÃ©s",
     clasificacion: "Drama",
     recaudacion: "$47 millones",
     cartelera: "https://www.ecartelera.com/carteles/1300/1364/001.jpg",
@@ -213,7 +213,7 @@ const peliculas = [
         imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Shelley_Duvall_2012.jpg/220px-Shelley_Duvall_2012.jpg"
       }
     ],
-    resumen: "Martín Circo Martín es el afortunado ganador del mayor concurso de la historia de la televisión..."
+    resumen: "MartÃ­n Circo MartÃ­n es el afortunado ganador del mayor concurso de la historia de la televisiÃ³n..."
   }
 ];
 

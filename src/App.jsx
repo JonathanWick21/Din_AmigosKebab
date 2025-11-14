@@ -1,34 +1,26 @@
 import Contenedor from "./pages/Contenedor";
+import HomePage from "./pages/HomePage";
+import { Routes, Route, Navigate} from 'react-router-dom';
+import NavigationBar from "./components/NavigationBar.jsx";
+import Movies from "./pages/Movies.jsx";
+import Interpreters from "./pages/Interpreters.jsx";
 // import Interprete from "./Interprete";
-import Interprete from "./components/InterpreteAccesible";
-import peliculas from "./data/peliculas";
+import peliculas from "./data/peliculas.js";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <Contenedor titulo="Intérpretes de películas destacadas">
-      
-      <p className="body-text">
-        Listado de intérpretes disponibles:
-      </p>
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1 w-full mt-8">
-        
-        
-          {peliculas
-          .map(pelicula =>
-            pelicula.actores.map((actor, index) => (
-              <Interprete
-                key={index}
-                nombre={actor.nombre}
-                foto={actor.imagen}
-                esNota10={pelicula.nota === 10} // pasamos si la nota es 10
-              >
-                {actor.biografia}
-              </Interprete>
-            ))
-          )}
-        </div>
-    </Contenedor>
+    <>
+      <Routes>
+        <Route element={<NavigationBar />}>
+          <Route path="/" element={ <HomePage />} />
+          <Route path="/inicio" element={ <Navigate to="/" />} />
+          <Route path="/peliculas" element={ <Movies />} />
+          <Route path="/interpretes" element={ <Interpreters />} />
+          <Route path="/admin" element={ <HomePage />} />
+        </Route>
+      </Routes>
+    </>
   )
 }
 
