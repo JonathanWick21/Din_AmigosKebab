@@ -4,6 +4,7 @@ import NavigationBar from "./components/NavigationBar.jsx";
 import Movies from "./pages/Movies.jsx";
 import Interpreters from "./pages/Interpreters.jsx";
 // import Interprete from "./Interprete";
+import Details from "./pages/Details.jsx";
 
 function App() {
   return (
@@ -15,8 +16,7 @@ function App() {
           <Route path="/peliculas" element={ <Movies />} />
           <Route path="/interpretes" element={ <Interpreters />} />
           <Route path="/admin" element={ <HomePage />} />
-          <Route path="/details/:id" element={ <HomePage />} />
-
+          <Route path="/details/:id" element={ <Details />} />
         </Route>
       </Routes>
     </>

@@ -3,6 +3,7 @@ import MainContent from "../components/MainContent.jsx"
 import ReusableCard from "../components/ReusableCard.jsx"
 import peliculas from "../data/peliculas.js"
 
+
 function Peliculas() {
     return(
         <>
@@ -12,7 +13,7 @@ function Peliculas() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {
                     peliculas.map( (pelicula, index) =>
-                        <Link to={"/details/$index"}>
+                        <Link to={`/details/${pelicula.id}` } key={index}>
                             <ReusableCard
                                 key={index}
                                 nombre={pelicula.nombre}
