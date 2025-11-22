@@ -1,24 +1,35 @@
 function ReusableCard(props) {
-    const { foto, nombre, esNota10 } = props;
+    const { foto, nombre, precio, children } = props;
     return (
         <article
-            tabIndex="1"
-            className="article-card, focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-lg bw-white shadow-sm hover:shadow-lg transition-shadow duration-200"
-            aria-label={`Intérprete ${nombre}${esNota10 ? ', destacado' : ''}`}
+            tabIndex="0"
+            className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 overflow-hidden"
+            aria-label={`Información sobre ${nombre}`}
         >
-            <figure className="w-full aspect-square rounded-t-lg bg-gray-100 overflow-hidden">
-                <img src={foto} alt={`Foto de ${nombre}`}
-                loading="lazy" className="w-full h-full object-cover" />
-                <figcaption className="sr-only">{props.nombre}</figcaption>
+            <figure className="w-full aspect-square bg-gray-100 overflow-hidden">
+                <img
+                    src={foto}
+                    alt={`Foto de ${nombre}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <figcaption className="sr-only">{nombre}</figcaption>
             </figure>
 
-            <header>
-                <h2 className={"text-(--heading-h5-font-size) font-(--heading-h5-font-weight) leading-(--heading-h5-line-height) ${esNota10 ? 'text-red-600' : 'text-gray-800'}"}>
-                    <strong>{nombre}</strong>
-                    {esNota10 && <em> – Intérprete destacado</em>}
-                </h2>
-            </header>
 
+            <div className="p-4 flex flex-col gap-2 items-center text-center">
+                <h2 className="text-lg md:text-xl font-semibold text-gray-900 leading-tight">
+                    {nombre}
+                </h2>
+
+
+                <p className="text-base md:text-lg font-bold text-primary">{precio}€</p>
+
+
+                {children && (
+                    <p className="text-sm text-gray-600 line-clamp-2">{children}</p>
+                )}
+            </div>
         </article>
     )
 }

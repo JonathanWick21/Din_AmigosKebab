@@ -21,8 +21,7 @@ function NavigationBar() {
                     </button>
                     <div className={`flex flex-col md:flex md:flex-row gap-4 ${open ? "block" : "hidden"} md:flex`}>
                         <NavLink to="/" onClick={() => setOpen(false)} aria-label="Inicio">Inicio</NavLink>
-                        <NavLink to="/peliculas" onClick={() => setOpen(false)} aria-label="Películas">Películas</NavLink>
-                        <NavLink to="/interpretes" onClick={() => setOpen(false)} aria-label="Intérpretes">Intérpretes</NavLink>
+                        <NavLink to="/productos" onClick={() => setOpen(false)} aria-label="Películas">Películas</NavLink>
 
                     </div>
                 </nav>
