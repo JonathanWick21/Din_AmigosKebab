@@ -1,5 +1,6 @@
 import { useNavigate, useParams} from "react-router-dom";
 import products from "../data/dataProducts.js";
+import Footer from "../components/Footer.jsx";
 
 function Details() {
     const { id } = useParams();
@@ -8,6 +9,7 @@ function Details() {
     const product = products.find( product => product.id === parseInt(id));
     return(
          <>
+         
         <main className="container mx-auto p-6">
       <section className="md:flex md:items-start md:gap-8">
         <figure className="md:w-2/5 lg:w-1/3 relative flex-shrink-0">
@@ -22,7 +24,7 @@ function Details() {
           <img
             src={product.imagen}
             alt={product.nombre}
-            className="w-full h-96 md:h-[36rem] lg:h-[44rem] object-cover rounded-lg shadow-md"
+            className="w-full h-96 md:h-[36rem] lg:h-[44rem] object-contain rounded-lg shadow-md"
           />
         </figure>
 
@@ -37,7 +39,7 @@ function Details() {
         </div>
       </section>
     </main>
-        
+    <Footer />
         </>
     )
 } export default Details;

@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={ <HomePage />} />
           <Route path="/inicio" element={ <Navigate to="/" />} />
           <Route path="/productos" element={ <ProductsCatalogue />} />
-          <Route path="/admin" element={ <AdminPage />} />
+          <Route path="/admin" element={ isAdmin ? <AdminPage /> : <Navigate to="/" />} />
         
 
           <Route path="/details/:id" element={ <Details />} />

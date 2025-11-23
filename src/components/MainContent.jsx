@@ -1,3 +1,5 @@
+import Footer from "./Footer";
+
 function MainContent({ children, titulo }) {
 
     return (
@@ -30,6 +32,7 @@ function MainContent({ children, titulo }) {
                 )}
                 {children}
             </section>
+                <Footer />
         </main>
     )
 
